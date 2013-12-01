@@ -1,0 +1,197 @@
+﻿body {
+
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+
+
+}
+nav {
+
+}
+
+
+
+
+a:link {
+
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+    
+h1 {
+        text-align: center;
+
+}
+
+h2 {
+    text-align: center;
+    color: blue;
+}
+
+h3 {
+    text-align: center;
+    color: purple;
+}
+
+h4 {
+            text-align: center;
+}
+p {
+
+            text-align: left;
+}
+HR {
+            display: none;
+}
+DIV.hr {
+            
+            width: 100%;
+            height: 8px;
+            background-color: #00ff00;
+            clear: both;
+
+}
+
+
+header {
+            display: block;
+            text-align: center;
+}
+    
+
+
+footer {
+
+
+        border-top: double #00ff00;
+        padding-top: 5px;
+}
+
+    footer address a {
+        padding: 20px;
+    }
+
+    footer address>a {
+        padding: 0px;
+    }
+
+footer address:before {
+        content: 'Mark Del Castillo \00A9';
+      
+    }
+
+form {
+    border: solid green;
+    border-style: outset;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+img {
+    float: right;
+    width: 200px;
+    height: 200px;
+       
+}
+
+#AboutMe {
+    width: 380px;
+}
+
+#AboutMe h3 {
+    text-align: left;
+}
+
+/*Main UL*/
+ul.nav{
+  display:inline-block;
+  background: #333;
+  color: #fff;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:20px;
+  margin-bottom:20px;
+  position:relative;
+  
+}
+
+/*Refer to all sub ul*/
+ul.nav li > ul, ul.nav li > ul li > ul{
+  display: none;
+  position: absolute;
+  left:0;
+  padding:0;
+  width: 80%;
+  background: #444;
+}
+
+ul.nav li > ul li > ul{
+  top:0px;
+  background: #555;
+}
+
+/*Refer to all list item */
+ul.nav > li, ul.nav li > ul li, ul.nav li > ul li > ul li{
+  list-style-type: none;
+  display:inline-block;
+  position: relative;
+}
+
+/*Refer to all anchor item*/
+ul.nav > li a, ul.nav li > ul li a, ul.nav li > ul li > ul li a{
+  text-decoration: none;
+  display:block;
+  padding: 10px;
+  
+  /*Fonts*/
+  color: #fff;
+  font-family:verdana;
+  font-size: 14px;
+  /*font-weight: bold;*/
+}
+
+/*Refer to all anchor item :hover*/
+ul.nav > li a:hover, ul.nav li > ul li a:hover, ul.nav li > ul li > ul li a:hover{
+  color: orange;
+  text-decoration: none;
+  text-transform: none;
+}
+
+/*display sub-menu*/
+ul.nav li:hover > ul{
+  display:block;
+  left:0;
+}
+
+
+
+/*CSS Arrows*/
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #fff;
+    font-size: 1px;
+    margin-left: 5px;
+}
+
+.arrow-right {
+    width: 0; 
+    height: 0; 
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid #fff;
+    font-size:2px;
+    margin-left: 5px;
+}
+

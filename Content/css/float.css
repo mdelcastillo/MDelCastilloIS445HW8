@@ -1,0 +1,73 @@
+﻿
+canvas {
+    
+    
+}
+
+
+body {
+
+    width: 680px;
+
+    color: white;
+
+   
+}
+
+
+header {
+    background-color: white;
+    width:680px;
+    min-height: 40px;
+    color: black;
+}
+
+nav {
+    background-color: green;
+    width:680px;
+    min-height: 30px;
+}
+
+article {
+    float:left;
+    background-color: pink;
+    width:450px;
+    min-height: 460px;
+
+}
+
+section {
+
+    background-color: brown;
+    width:450px;
+    min-height: 200px;
+    margin-top: 10px;
+}
+
+aside {
+
+
+    float:left;
+    background-color: cyan;
+    width: 230px;
+    min-height: 460px;
+}
+
+footer {
+    float:right;
+    background-color: green;
+    width:680px;
+    min-height: 30px;
+}
+
+nav a {
+
+    color: white;
+    
+}
+
+nav li {
+    display: inline;
+    padding-right: 10px;
+}
+

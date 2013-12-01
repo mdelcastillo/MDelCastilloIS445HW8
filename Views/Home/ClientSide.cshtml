@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "ClientSide";
+}
+
+<h2>Client Side</h2>
+
+<form name= "ReverseForm" id ="ReverseForm" action = "javascript:ReverseText()">
+  <label for="inputNumber">Please input a line of text: </label>
+  <input type="text" name="inputText" id="inputText" required="required"/>
+  <textarea name="result" id="result" cols="50" rows="1" placeholder="Reversed Text result"></textarea>
+  <input type="submit" name="submit" value="submit"  />
+</form>
+
+
+<script src="~/Scripts/ReverseText.js"></script>

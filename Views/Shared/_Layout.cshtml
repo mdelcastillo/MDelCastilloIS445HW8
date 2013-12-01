@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    @Styles.Render("~/Content/css")
+    <link href="~/Content/css/styles.css" rel="stylesheet" />
+    @Scripts.Render("~/bundles/modernizr")
+
+
+</head>
+<body>
+    
+    <header>
+        <h1>Del Castillo, Mark Homework ASP.NET MVC Web Site in Windows Azure</h1>
+        <div class="hr"><hr /></div>
+        <nav>
+            
+        <ul class="nav">    
+            <li><a>@Html.ActionLink("Home", "Index", "Home")</a></li>
+                   
+            
+            
+            <li><a>Form/Layout Demos</a>
+                <ul>
+                        <li><a>@Html.ActionLink("Web Form Demo", "Form", "Home")</a></li>
+                        <li><a>Layout Demo</a>
+                            <ul>
+                            
+                                <li><a>@Html.ActionLink("Absolute Layout", "Absolute", "Home")</a></li>
+                                <li><a>@Html.ActionLink("Static Layout", "Static", "Home")</a></li>
+                                <li><a>@Html.ActionLink("Float Layout", "Float", "Home")</a></li>
+                            </ul>
+                         </li>
+
+                </ul>
+            </li>
+
+
+
+        <li><a>@Html.ActionLink("ClientSide Demo", "ClientSide", "Home")</a></li>
+        <li><a>@Html.ActionLink("ServerSide Demo", "Serverside", "Home")</a></li>
+
+        <li><a>@Html.ActionLink("About Me", "About", "Home")</a></li>
+
+        </ul>
+
+        </nav>
+
+    </header>
+    
+    
+    @RenderBody()
+    
+        
+    <footer>
+        <address>
+        <a>Contact Information </a>
+        <i><a href="mailto:peemk@hotmail.com">Email: peemk@hotmail.com</a> 
+        <a>Phone: (310)555-1212</a></i>
+        </address>
+
+
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+
+
+    @RenderSection("scripts", required: false)
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <script src="~/Scripts/HW8Menu.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+﻿
+
+
+body {
+
+    width: 680px;
+    text-align: center;
+    color: white;
+
+   
+}
+
+header {
+    background-color: white;
+    color: black;
+    width:680px;
+    padding-bottom: 20px;
+}
+
+nav {
+    background-color: green;
+    width:680px;
+    padding-bottom: 10px;
+}
+
+article {
+    background-color: pink;
+    width:450px;
+    padding-bottom: 20px;
+}
+
+section {
+    background-color: brown;
+    width:450px;
+    padding-bottom: 50px;
+    margin-top: 10px;
+}
+
+aside {
+    background-color: cyan;
+    width:225px;
+    padding-bottom: 200px;
+}
+
+footer {
+    background-color: green;
+    width:680px;
+    padding-bottom: 20px;
+}
+
+nav a {
+
+    color: white;
+    padding-bottom: 20px;
+}
+
+nav li {
+    display: inline;
+    padding-right: 10px;
+}

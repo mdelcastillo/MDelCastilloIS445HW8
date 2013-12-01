@@ -1,0 +1,82 @@
+﻿@{
+    ViewBag.Title = "Form";
+}
+
+        <h2>Welcome to my Web Form</h2>
+        <br />
+        <h3>A demo form for hotel room reservation</h3>
+        <br />
+        @{ Html.BeginForm();}
+        
+        @*<form action ="" method ="put">*@
+            <fieldset>
+                <legend>Customer Information</legend>
+                @*<label>Full name:
+                    <input type="text" name="fullname" id="fullname" required="required"/></label><br />*@
+                <label for="fullname">Full name: </label>
+                @Html.TextBox("fullname", "", new { type = "text", required = "required"})
+                @*Html.ValidationMessage("fullname", "*")*@
+                <br />
+
+                @*<label>Email address:
+                    <input type ="email" name="email" id="email" required="required" /></label><br />*@
+                <label for="email">Email address: </label>
+
+                @Html.TextBox("email","", new {type = "email", required="required"})
+                @*Html.ValidationMessage("email", "*")*@
+                <br />
+
+                @*<label>Phone:
+                    <input type ="tel" name="phone" id="phone" required="required" /></label>*@
+
+                <label for="phone">Phone: </label>
+                @Html.TextBox("phone", "", new {type = "tel", required="required"})
+
+
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Room Information</legend>
+                <label for="ArriveDate">Arrival date: </label>
+                @Html.TextBox("ArriveDate", "", new {type="date", required="required"})
+                <br />
+                <label for="ArriveTime">Arrival time: </label>
+                @Html.TextBox("ArriveTime", "", new {type="time", required="required"})
+                <br />
+                Select a room type: 
+                @Html.DropDownList("RoomType")
+                @*<select name ="RoomType">
+                    <option value="Luxury" selected="selected">Luxury</option>
+                    <option value="Standard">Standard</option>
+                    <option value="Economic">Economic</option>
+                </select>*@
+                <br />
+                <label for="Days">Number of nights (Upto 30 nights): </label>
+                @Html.TextBox("Days", "1", new {type="number", min="1", max="30"})
+                <br />
+                <label for="Guest">Number of Guests (Upto 3 guests): </label>
+                @Html.TextBox("Guest", "0", new {type="number", min="0", max="3"})
+                <br />
+                
+                
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Other Information</legend>
+                <label for="Promo">Promo code: </label>
+                @Html.TextBox("Promo", "", new {type="text", maxlength ="4", pattern="[a-zA-Z0-9]{4}", title = "4 digits alphanumeric Promo code", size ="4"})
+                <br />
+                Special Note:
+                
+                @*<textarea name="comments" id="comments" cols="50" rows ="5" placeholder="Enter your special notes here"></textarea>*@
+                @Html.TextArea("comments", "", 5, 50, new {placeholder = "Enter your special notes here" })
+
+            </fieldset>
+            <input type="reset" name="reset" id="reset" value="Clear Form" />
+           
+            <input type="submit" name="submit" id="submit" value ="Request Reservation"/>
+    @*</form>*@    
+    @{ Html.EndForm();}

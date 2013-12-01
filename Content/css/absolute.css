@@ -1,0 +1,166 @@
+﻿
+
+
+body {
+
+    position: absolute;
+    width: 680px;
+    text-align: center;
+    color: white;
+    margin-left:auto;
+    margin-right:auto;
+   
+}
+
+header {
+    position:absolute;
+
+    color: black;
+    width:680px;
+    padding-bottom: 20px;
+    top: 0px;
+    left: 0px;
+}
+
+nav {
+    /*position: absolute;*/
+    
+    width:680px;
+    padding-bottom: 10px;
+    top: 100px;
+    left: 0px;
+}
+    
+article {
+    position: absolute;
+    background-color: pink;
+    width:450px;
+    padding-bottom: 20px;
+    top: 186px;
+    left: 0px;
+}
+
+section {
+    background-color: brown;
+    width:450px;
+    padding-bottom: 50px;
+    margin-top: 10px;
+}
+
+aside {
+    position:absolute;
+    background-color: cyan;
+    width:230px;
+    padding-bottom: 172px;
+    left:450px;
+    top:186px;
+}
+
+footer {
+    position:absolute;
+    background-color: green;
+    width:680px;
+    padding-bottom: 20px;
+    top:375px;
+    left: 0px;
+
+}
+
+nav a {
+
+    color: white;
+    padding-bottom: 20px;
+}
+
+nav li {
+    display: inline;
+    padding-right:10px;
+}
+
+h1 {
+    text-decoration-color: black;
+}
+/*Main UL*/
+ul.nav{
+  display:inline-block;
+  background: #333;
+  color: #fff;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:20px;
+  margin-bottom:20px;
+  position:relative;
+  
+}
+
+/*Refer to all sub ul*/
+ul.nav li > ul, ul.nav li > ul li > ul{
+  display: none;
+  position: absolute;
+  left:0;
+  padding:0;
+  width: 80%;
+  background: #444;
+}
+
+ul.nav li > ul li > ul{
+  top:0px;
+  background: #555;
+}
+
+/*Refer to all list item */
+ul.nav > li, ul.nav li > ul li, ul.nav li > ul li > ul li{
+  list-style-type: none;
+  display:inline-block;
+  position: relative;
+}
+
+/*Refer to all anchor item*/
+ul.nav > li a, ul.nav li > ul li a, ul.nav li > ul li > ul li a{
+  text-decoration: none;
+  display:block;
+  padding: 10px;
+  
+  /*Fonts*/
+  color: #fff;
+  font-family:verdana;
+  font-size: 14px;
+  /*font-weight: bold;*/
+}
+
+/*Refer to all anchor item :hover*/
+ul.nav > li a:hover, ul.nav li > ul li a:hover, ul.nav li > ul li > ul li a:hover{
+  color: orange;
+  text-decoration: none;
+  text-transform: none;
+}
+
+/*display sub-menu*/
+ul.nav li:hover > ul{
+  display:block;
+  left:0;
+}
+
+
+
+/*CSS Arrows*/
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #fff;
+    font-size: 1px;
+    margin-left: 5px;
+}
+
+.arrow-right {
+    width: 0; 
+    height: 0; 
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid #fff;
+    font-size:2px;
+    margin-left: 5px;
+}
