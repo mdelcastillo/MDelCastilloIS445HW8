@@ -65,15 +65,19 @@ namespace HW7.Controllers
 
             if (string.IsNullOrEmpty(inputNumber))
             {
-                return Content("invalid input, please try again");
+                string msg = "invalid input, please try again";
+                return View((object)msg);
             }
             else if (inputNumber.Length != 10)
             {
-                return Content("Please enter 10 digit number");
+                
+                string msg = "Please enter 10 digit number, please try again";
+                return View((object)msg);
             }
             else
             {
                 string formatted = formatNumber(inputNumber);
+                formatted = "Your formatted phone number is : " + formatted;
                 return View((object)formatted);
             }
         }
