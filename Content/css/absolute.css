@@ -23,11 +23,11 @@ header {
 }
 
 nav {
-    /*position: absolute;*/
+    position: absolute;
     
     width:680px;
     padding-bottom: 10px;
-    top: 100px;
+    top: 110px;
     left: 0px;
 }
     
